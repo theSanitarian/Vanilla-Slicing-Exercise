@@ -1,0 +1,26 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    overflow-x: visible;
+}
+
+@include desktop {
+    html {
+        font-size: 20px;
+    }
+}
+
+@include tablet {
+    html {
+        font-size: 18px;
+    }
+}
+
+@include mobile {
+    html {
+        font-size: 16px;
+    }
+}

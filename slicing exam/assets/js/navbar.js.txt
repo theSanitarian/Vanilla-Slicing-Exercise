@@ -1,0 +1,13 @@
+const hamburger = document.querySelector(".hamburger-btn");
+const menu = document.querySelector(".menu");
+const menuBtn = document.querySelectorAll(".menu-btn");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
+menuBtn.forEach((button) =>
+  button.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  })
+);

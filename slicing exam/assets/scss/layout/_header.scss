@@ -1,0 +1,58 @@
+header{
+    width: 100%;
+    .header--banner{
+        width: 100%;
+        background-color: $color-background-lightblue;
+        &--content{
+            max-width: $desktop-contentwidth;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+
+            &--social{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                a{
+                    display: inline;
+                    svg {
+                            fill: $color-white;
+                            background-color: $color-black;
+                            padding: 8px;
+                            border-radius: 20px;
+                            border: none;
+                            height: 1rem;
+                            width: 1rem;
+                            display: inline;
+                            margin: 8px 3px;
+                        }
+                }
+            }
+
+            &--contact{
+                display: flex;
+                div{
+                    display: flex;
+                    align-items: center;
+                    svg {
+                        height: 1rem;
+                        width: 1rem;
+                        fill: $color-orange;
+                        padding: 10px;
+                        display: inline;
+                    }
+                
+                    p {
+                        display: none;
+                        @include desktop{
+                            display: inline;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
